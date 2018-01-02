@@ -8,3 +8,10 @@ authorization
 automatically logged in
 - There should be a `Logout` button in the authorized view
 - It is recommended to use *Webpack*, *React* and *Redux* in the development process.
+
+## Installation
+- Should be as simple as
+  - `git clone` https://github.com/kamazs/fb-business-card.git
+  - `npm i`
+  - `npm start`
+  - open `localhost:3000` in browser
