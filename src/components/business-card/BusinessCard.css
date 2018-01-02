@@ -1,0 +1,62 @@
+
+a {
+  color: orange;
+}
+
+a:hover {
+  color: white;
+  background-color: orange;
+}
+
+.info {
+  margin-left: 0.5em;
+}
+
+.label {
+  color: lightgray;
+  font-size: 0.8em;
+}
+
+.field {
+  color: black;
+  font-size: 1em;
+}
+
+.logout {
+  border: none;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: 2em;
+  height: 2em;
+  right: -0.5em;
+  top: -0.5em;
+  position: absolute;
+  cursor: pointer;
+  transition: transform .5s ease-out;
+}
+
+.logout::after {
+  content: "X";
+}
+
+.logout:hover {
+  color: red;
+  background-color: white;
+  border: solid 1px red;
+  transform: rotate(360deg) scale(1.2);
+  transition: transform .5s ease-out;
+}
+
+.logout:active {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: solid 1px red;
+  transform: scale(0.75);
+  transition: transform .5s ease-out;
+}
+
+.logout:focus {
+  outline: none;
+}

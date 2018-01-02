@@ -1,0 +1,40 @@
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: white;
+  box-shadow: 12px 12px 2px 1px rgba(102, 102, 102, 0.2);
+  transition: transform 1s ease-in-out;
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.25);
+  transition: transform 1s ease-in-out;
+}
+
+.card.pulsate {
+  animation: 0.25s infinite alternate pulse;
+}
+
+.card.pulsate:hover {
+  animation-play-state: paused;
+}
